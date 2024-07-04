@@ -1,0 +1,6 @@
+<%= simple_form_for [@restaurant, @review],
+html: { class: "row col-6 align-items-center" } do |f| %>
+  <%= f.input :rating, label: 'A rating of 1-5 stars please', collection: 1..5 %>
+  <%= f.input :content %>
+  <%= f.button :submit, class: "btn-primary col-2" %>
+<% end %>
